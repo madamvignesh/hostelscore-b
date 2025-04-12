@@ -9,7 +9,7 @@ const getAllHostels = async (req, res) => {
             res.send(hostels);
         } catch (error) {
             console.error(error);
-            res.status(500).json({ error: 'Internal Server Error' });
+            res.status(500).json({ error: error });
         }
     } else {
         try{
@@ -17,7 +17,7 @@ const getAllHostels = async (req, res) => {
             res.send(hostels);
         } catch (error) {
             console.error(error);
-            res.status(500).json({ error: 'Internal Server Error' });
+            res.status(500).json({ error: error });
         }
     }
 }
@@ -37,7 +37,7 @@ const getHostelById = async (req, res) => {
             res.json(hostel);
         } catch (error) {
             console.error(error);
-            res.status(500).json({ error: 'Internal Server Error' });
+            res.status(500).json({ error: error });
         }
     } 
 }
