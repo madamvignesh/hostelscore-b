@@ -2,7 +2,7 @@ const initializeDatabase = require('../model/database.js');
 
 const getAllHostels = async (req, res) => {
     const db = await initializeDatabase(); // Initialize the database connection
-    const {input_search} = req.body;
+    const {input_search} = req.query;
 
     if (input_search){
         try{

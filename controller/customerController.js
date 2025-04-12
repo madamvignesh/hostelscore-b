@@ -3,7 +3,7 @@ const initializeDatabase = require('../model/database.js');
 const getCustomer = async (req, res) => {
     const db = await initializeDatabase(); // Initialize the database connection
     const {current_id, user_type} = req.auth;
-    const {input_search} = req.body;
+    const {input_search} = req.query;
     if (user_type !== 'Admin') {
         return res.status(403).json({ error: 'Forbidden' });
     }

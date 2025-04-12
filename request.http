@@ -3,8 +3,8 @@ POST http://localhost:3000/api/auth/login
 Content-Type: application/json
 
 {
-    "username": "maruthi",
-    "password": "maruthi66"
+    "username": "varshini",
+    "password": "varshini1234"
 }
 
 ###
@@ -75,7 +75,6 @@ Content-Type: application/json
     "liked_rating": 5.0
 }
 
-
 ### PUT Request - Change Password
 PUT http://localhost:3000/api/change_password
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNzRkMDRkYjktOWI3OS00NTNhLTk1MGQtMGJiMDY4YTg4MzI3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQzODEyMDAsImV4cCI6MTc0NDM4NDgwMH0.hMSt_OSfpmF-SjFcAd73IQ3OxtORmoVfaF8WUosD3hs
@@ -87,14 +86,9 @@ Content-Type: application/json
 }
 
 ### GET Request - Get All Hostels
-GET http://localhost:3000/api/hostels
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNzRkMDRkYjktOWI3OS00NTNhLTk1MGQtMGJiMDY4YTg4MzI3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQzODMyMTMsImV4cCI6MTc0NDM4NjgxM30.pFtUzZPvtbVf-9O7B9mXJ91r0YBDdAx_YJhat5JOgus
+GET http://localhost:3000/api/hostels?input_search=
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNzRkMDRkYjktOWI3OS00NTNhLTk1MGQtMGJiMDY4YTg4MzI3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQ0MjU3ODAsImV4cCI6MTc0NDQyOTM4MH0.zRvmUB6Vn7Weh77byvQOS-VA4jo1h9JRx9_HMkDhZg0
 Content-Type: application/json
-
-
-{
-    "input_search": ""
-}
 
 ###
 
@@ -103,16 +97,15 @@ GET http://localhost:3000/api/hostels/10000
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiYjE2NDkyMmQtZTdmMC00MjFlLWIzZjMtMTUzZDhlMDQ0NzA0IiwidXNlcl90eXBlIjoiQ3VzdG9tZXIiLCJpYXQiOjE3NDQzNzc5OTcsImV4cCI6MTc0NDM4MTU5N30.xjBEWNFYnoPnpfmfrJEY9vqZyb7SNDQxgWGWXOMQfsk
 Content-Type: application/json
 
-
+###
 
 ### GET Request - Get All Customers (Admin only)
-GET http://localhost:3000/api/customers
+GET http://localhost:3000/api/customers?input_search=
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNDEyZGM0OGItYzFlMi00ZDE2LThlZDYtNzAxNWQ1YmUzM2Y0IiwidXNlcl90eXBlIjoiQ3VzdG9tZXIiLCJpYXQiOjE3NDQzODM0MTcsImV4cCI6MTc0NDM4NzAxN30.-oeVsOEJ4tljTkbQ1A04COKa2urpCTlA5OHj5XsBatc
 Content-Type: application/json
 
-{
-    "input_search": ""
-}
+###
+
 ### GET Request - Get likes by Hostel ID
 GET http://localhost:3000/api/hostellikes/10000
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNDEyZGM0OGItYzFlMi00ZDE2LThlZDYtNzAxNWQ1YmUzM2Y0IiwidXNlcl90eXBlIjoiQ3VzdG9tZXIiLCJpYXQiOjE3NDQzODM0MTcsImV4cCI6MTc0NDM4NzAxN30.-oeVsOEJ4tljTkbQ1A04COKa2urpCTlA5OHj5XsBatc
