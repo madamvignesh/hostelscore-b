@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/madamvignesh/hostelscore-b/issues"
   },
-  "homepage": "https://github.com/madamvignesh/hostelscore-b#readme"
+  "homepage": "https://github.com/madamvignesh/hostelscore-b#readme",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }
