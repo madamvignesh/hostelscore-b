@@ -76,7 +76,11 @@ const getHostelLikesByID = async (req, res) => {
     const {current_id, user_type} = req.auth;
     const { hostel_id } = req.params;
     try {
-        const likes = await db.get('SELECT * FROM Portal_Customer_Like WHERE hotel_id = ?', [hostel_id]);
+        const likes = await db.get(`SELECT pcl.*, c.* 
+             FROM Portal_Customer_Like pcl
+             LEFT JOIN customer c 
+             ON pcl.user_id = c.user_id 
+             WHERE pcl.hotel_id = ?`, [hostel_id]);
         if (!likes) {
             return res.status(404).json({ error: 'No likes found for this hostel' });
         }
