@@ -76,7 +76,7 @@ const getHostelLikesByID = async (req, res) => {
     const {current_id, user_type} = req.auth;
     const { hostel_id } = req.params;
     try {
-        const likes = await db.get(`SELECT pcl.*, c.* 
+        const likes = await db.all(`SELECT pcl.*, c.* 
              FROM Portal_Customer_Like pcl
              LEFT JOIN customer c 
              ON pcl.user_id = c.user_id 
