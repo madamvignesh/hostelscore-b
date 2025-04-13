@@ -1,10 +1,10 @@
 ### POST Request - Login
-POST http://localhost:3000/api/auth/login
+POST http://localhost:3001/api/auth/login
 Content-Type: application/json
 
 {
-    "username": "varshini",
-    "password": "varshini1234"
+    "username": "maruthi",
+    "password": "maruthi66"
 }
 
 ###
@@ -57,7 +57,7 @@ Content-Type: application/json
 
 ### POST Request - User likes a hostel
 POST http://localhost:3001/api/liked/10000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNzRkMDRkYjktOWI3OS00NTNhLTk1MGQtMGJiMDY4YTg4MzI3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQ1MjAzMDYsImV4cCI6MTc0NDUyMzkwNn0.NYhUUBnYqGz-krTrjRKD7ZY28QzsAT7As8xOxvYloVU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNDEyZGM0OGItYzFlMi00ZDE2LThlZDYtNzAxNWQ1YmUzM2Y0IiwidXNlcl90eXBlIjoiQ3VzdG9tZXIiLCJpYXQiOjE3NDQ1MjMxNTIsImV4cCI6MTc0NDUyNjc1Mn0.VTY92vew1q0ZGGe3Ut2OYMPao9G-bOqe3jERalVn1qk
 Content-Type: application/json
 
 {

@@ -28,7 +28,7 @@ const getHostelById = async (req, res) => {
     const { id } = req.params;
 
     try {
-        const hostel = await db.get('SELECT * FROM hostel WHERE hotel_id = ?', [id]);
+        const hostel = await db.all('SELECT * FROM hostel WHERE hotel_id = ?', [id]);
         if (!hostel) {
             return res.status(404).json({ error: 'Hostel not found' });
         }
