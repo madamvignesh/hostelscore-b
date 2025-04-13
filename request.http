@@ -49,8 +49,8 @@ Content-Type: application/json
 }
 
 ### GET Request - Get all liked data (admin only)
-GET http://localhost:3000/api/liked
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNzRkMDRkYjktOWI3OS00NTNhLTk1MGQtMGJiMDY4YTg4MzI3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQzODA3MzgsImV4cCI6MTc0NDM4NDMzOH0.OjIDmNP7FG-sAS_KpZBI5sUq2FWJZ1EJHvAP8RD6xi8
+GET http://localhost:3001/api/liked
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiY2JkNzBhNDAtNmQwZi00ODQwLWI1M2MtNDIxYjgyNGJkYzg3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQ1Mjk3OTQsImV4cCI6MTc0NDUzMzM5NH0.eNLVpQlRK4HPz9-Yno0w2kp4pVqD90qJknnZCrY6LpI
 Content-Type: application/json
 
 ###
@@ -86,8 +86,8 @@ Content-Type: application/json
 }
 
 ### GET Request - Get All Hostels
-GET http://localhost:3000/api/hostels?input_search=
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNzRkMDRkYjktOWI3OS00NTNhLTk1MGQtMGJiMDY4YTg4MzI3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQ0MjU3ODAsImV4cCI6MTc0NDQyOTM4MH0.zRvmUB6Vn7Weh77byvQOS-VA4jo1h9JRx9_HMkDhZg0
+GET http://localhost:3001/api/hostels?input_search=
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiY2JkNzBhNDAtNmQwZi00ODQwLWI1M2MtNDIxYjgyNGJkYzg3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQ1Mjk3OTQsImV4cCI6MTc0NDUzMzM5NH0.eNLVpQlRK4HPz9-Yno0w2kp4pVqD90qJknnZCrY6LpI
 Content-Type: application/json
 
 ###
@@ -100,8 +100,8 @@ Content-Type: application/json
 ###
 
 ### GET Request - Get All Customers (Admin only)
-GET http://localhost:3000/api/customers?input_search=
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNDEyZGM0OGItYzFlMi00ZDE2LThlZDYtNzAxNWQ1YmUzM2Y0IiwidXNlcl90eXBlIjoiQ3VzdG9tZXIiLCJpYXQiOjE3NDQzODM0MTcsImV4cCI6MTc0NDM4NzAxN30.-oeVsOEJ4tljTkbQ1A04COKa2urpCTlA5OHj5XsBatc
+GET http://localhost:3001/api/customers?input_search=
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiY2JkNzBhNDAtNmQwZi00ODQwLWI1M2MtNDIxYjgyNGJkYzg3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQ1Mjk3OTQsImV4cCI6MTc0NDUzMzM5NH0.eNLVpQlRK4HPz9-Yno0w2kp4pVqD90qJknnZCrY6LpI
 Content-Type: application/json
 
 ###
