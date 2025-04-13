@@ -56,8 +56,8 @@ Content-Type: application/json
 ###
 
 ### POST Request - User likes a hostel
-POST http://localhost:3000/api/liked/10002
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNDEyZGM0OGItYzFlMi00ZDE2LThlZDYtNzAxNWQ1YmUzM2Y0IiwidXNlcl90eXBlIjoiQ3VzdG9tZXIiLCJpYXQiOjE3NDQzODQyNjMsImV4cCI6MTc0NDM4Nzg2M30.DPt4FUNPyDXCq3ewNNPJP_OzBA90hvPwpOejKYLgWEM
+POST http://localhost:3001/api/liked/10000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNzRkMDRkYjktOWI3OS00NTNhLTk1MGQtMGJiMDY4YTg4MzI3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQ1MjAzMDYsImV4cCI6MTc0NDUyMzkwNn0.NYhUUBnYqGz-krTrjRKD7ZY28QzsAT7As8xOxvYloVU
 Content-Type: application/json
 
 {
@@ -93,8 +93,8 @@ Content-Type: application/json
 ###
 
 ### GET Request - Get Hostel by ID
-GET http://localhost:3000/api/hostels/10000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiYjE2NDkyMmQtZTdmMC00MjFlLWIzZjMtMTUzZDhlMDQ0NzA0IiwidXNlcl90eXBlIjoiQ3VzdG9tZXIiLCJpYXQiOjE3NDQzNzc5OTcsImV4cCI6MTc0NDM4MTU5N30.xjBEWNFYnoPnpfmfrJEY9vqZyb7SNDQxgWGWXOMQfsk
+GET http://localhost:3001/api/hostels/10000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNzRkMDRkYjktOWI3OS00NTNhLTk1MGQtMGJiMDY4YTg4MzI3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQ1MTY0NDUsImV4cCI6MTc0NDUyMDA0NX0.1nKvTtDAsw_YOUKalzNlvmZ7mAMkpcWSMI-5Meq1lGE
 Content-Type: application/json
 
 ###
@@ -107,6 +107,6 @@ Content-Type: application/json
 ###
 
 ### GET Request - Get likes by Hostel ID
-GET http://localhost:3000/api/hostellikes/10000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNDEyZGM0OGItYzFlMi00ZDE2LThlZDYtNzAxNWQ1YmUzM2Y0IiwidXNlcl90eXBlIjoiQ3VzdG9tZXIiLCJpYXQiOjE3NDQzODM0MTcsImV4cCI6MTc0NDM4NzAxN30.-oeVsOEJ4tljTkbQ1A04COKa2urpCTlA5OHj5XsBatc
+GET http://localhost:3001/api/hostellikes/10000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X2lkIjoiNzRkMDRkYjktOWI3OS00NTNhLTk1MGQtMGJiMDY4YTg4MzI3IiwidXNlcl90eXBlIjoiQWRtaW4iLCJpYXQiOjE3NDQ1MjAzMDYsImV4cCI6MTc0NDUyMzkwNn0.NYhUUBnYqGz-krTrjRKD7ZY28QzsAT7As8xOxvYloVU
 Content-Type: application/json
