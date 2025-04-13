@@ -6,7 +6,7 @@ const getLikedData = async (req, res) => {
     const {current_id, user_type} = req.auth;
     try {
         if (user_type === 'Admin') {
-            const likedData = await db.all('SELECT AVG(rating), COUNT(liked_id) from Portal_Customer_Like');
+            const likedData = await db.all('SELECT AVG(rating) as avg_rating, COUNT(liked_id) as total_rating from Portal_Customer_Like');
             res.json(likedData);
         } else {
             res.json({ error: 'User is not an admin' });

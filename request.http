@@ -24,15 +24,15 @@ Content-Type: application/json
 ###
 
 ### POST Request - Register a New Hostel
-POST http://localhost:3000/api/auth/register/hostel
+POST http://localhost:3001/api/auth/register/hostel
 Content-Type: application/json
 
 {
-    "name": "Royal Hostel",
-    "address": "145 Main Street",
-    "price": 1000,
-    "username": "royalhostel",
-    "password": "royalhostel123"
+    "name": "Hyderabad Hostel",
+    "address": "145 old city",
+    "price": 1050,
+    "username": "hyderabadhostel",
+    "password": "hyderabad123"
 }
 
 ###

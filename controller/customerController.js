@@ -9,7 +9,12 @@ const getCustomer = async (req, res) => {
     }
     if (input_search){
         try{
-            const customer = await db.get(`SELECT * FROM customer WHERE name LIKE '%${input_search}%'`);            if (!customer) {
+            const customer = await db.all(`SELECT c.user_id, c.name, c.gender, c.age, ap.username 
+                 FROM customer c 
+                 LEFT JOIN all_passwords ap 
+                 ON c.user_id = ap.user_id 
+                 WHERE c.name LIKE '%${input_search}%'`);
+            if (!customer) {
                 return res.status(404).json({ error: 'Customer not found' });
             }
             res.json(customer);
@@ -19,7 +24,7 @@ const getCustomer = async (req, res) => {
         }
     } else {
         try {
-            const customer = await db.all('SELECT * FROM customer');
+            const customer = await db.all('SELECT c.user_id, c.name, c.gender, c.age, ap.username FROM customer c LEFT JOIN all_passwords ap ON c.user_id = ap.user_id');
             res.json(customer); 
         } catch (error) {
             console.error(error);

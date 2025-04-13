@@ -35,6 +35,7 @@ const registerUser = async (req, res) => {
     if (!username || !password || !name || !gender || !age) {
         return res.status(400).json({ error: 'given data is not provided' });
     }
+    console.log(username, name, password, gender, age)
     try{
         const existingUser = await db.get('SELECT * FROM all_passwords WHERE username = ?', [username]);
         if (existingUser) {
@@ -67,6 +68,8 @@ const registerHostel = async (req, res) => {
     if (!name || !address || !price || !username || !password) {
         return res.status(400).json({ error: 'All fields are required: name, location, address, price, rating, username, and password' });
     }
+    console.log(name, address, price, username, password)
+    //name: 'Happy Hotel', address: '123 Hyderabad 520110', price: '6500', username: 'happyhotel', password: 'happyhotel123'
     try {
         const hostel = await db.get('SELECT * FROM all_passwords WHERE username = ?', [username]);
         if (hostel) {
@@ -97,9 +100,11 @@ const registerHostel = async (req, res) => {
 const registerAdmin = async (req, res) => {
     const db = await initializeDatabase();
     const { username, password, name,contact_no } = req.body;
+    console.log(username, password, name, contact_no)
     if (!username || !password || !name || !contact_no) {
         return res.status(400).json({ error: 'Username and password are required' });
     }
+    
     try {
         const existingAdmin = await db.get('SELECT * FROM all_passwords WHERE username = ?', [username]);
         if (existingAdmin) {
